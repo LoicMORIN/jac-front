@@ -1,9 +1,8 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 
-import Home from "../Views/HomeView";
+import HomeView from "../Views/HomeView";
 import FAQ from "../Views/FAQView";
 import Account from "../Views/AccountView";
 
@@ -17,7 +16,7 @@ function TabNavigator(props: any) {
       <HomeTab.Navigator>
         <HomeTab.Screen
           name="Home"
-          component={Home}
+          component={HomeView}
           options={{ headerShown: false }}
         />
         <HomeTab.Screen name="Account" component={Account} />
@@ -27,6 +26,6 @@ function TabNavigator(props: any) {
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = Style;
 
 export default TabNavigator;

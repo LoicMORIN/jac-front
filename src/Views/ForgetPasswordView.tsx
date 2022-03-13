@@ -1,14 +1,16 @@
 import React from "react";
 import { Text, View } from "react-native";
+
+
 import Style from "../../Style";
 
-function HomeView() {
+function ForgetPassword() {
     return(
         <View> 
-            <Text>HOME</Text>
+            <Text>Forget Password </Text>
         </View>
     )
 
 }
 
-export default HomeView; 
+export default ForgetPassword; 
