@@ -1,7 +1,5 @@
 import React from "react";
-
 import { useAuth } from "../Context/AuthContext";
-
 import LoginView from "../Views/LoginView";
 import TabNavigator from "./TabNavigator";
 
