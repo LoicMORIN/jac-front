@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Style from '../../Style';
 
-function SingupView() {
+function SingUpView() {
     return (
       <View style={Style.container}>
         <Text>Ecran d'inscription </Text>
@@ -13,6 +13,6 @@ function SingupView() {
   }
 
   
-  export default SingupView;
+  export default SingUpView;
 
 

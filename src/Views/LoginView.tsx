@@ -3,7 +3,7 @@ import {Text, View, Button  } from 'react-native';
 import { useAuth } from "../Context/AuthContext";
 import SingupView from './SignupView'
 import Style from '../../Style';
-import SignUpButton from '../Components/SignUpButton'
+
 
 
 function LoginView() {
@@ -12,7 +12,7 @@ function LoginView() {
       <View style={Style.container}>
         <Text>Ecran de connexion</Text>
         <Button title="Se connecter" onPress={() => login()} />
-        <SignUpButton/>
+        <SingupView/>
       </View>
     );
   }

@@ -1,4 +1,4 @@
-import { StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 
 backgroundColor_default = "#ffffff";
 

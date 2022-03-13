@@ -4,7 +4,7 @@ const AuthContext = createContext({
   isAuthentificated: false,
   login: () => {},
 });
-function AuthProvider({ children } : any)  {
+function AuthProvider({ children }: any) {
   const [isAuthentificated, setIsAuthentificated] = useState(false);
   function login() {
     setIsAuthentificated(true);
