@@ -1,7 +1,6 @@
 import React from "react";
 import { useAuth } from "../Context/AuthContext";
-import LoginView from "../Views/LoginView";
-import ConnexionNavigator from "./Connexion";
+import ConnexionNavigator from "./ConnexionNavigator";
 import TabNavigator from "./TabNavigator";
 
 function AuthNavigator(): any {
