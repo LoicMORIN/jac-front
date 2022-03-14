@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import Style from "../../Style";
 
-function FAQ() {
+function FAQView() {
     return(
         <View> 
             <Text>FAQ</Text>
@@ -11,4 +11,4 @@ function FAQ() {
 
 }
 
-export default FAQ; 
+export default FAQView; 

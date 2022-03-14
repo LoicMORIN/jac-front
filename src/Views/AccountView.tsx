@@ -2,7 +2,7 @@ import React from "react";
 import {View, Text } from "react-native";
 import Style from "../../Style";
 
-function Account() {
+function AccountView() {
     return(
         <View> 
             <Text>Accout</Text>
@@ -11,4 +11,4 @@ function Account() {
 
 }
 
-export default Account; 
+export default AccountView; 

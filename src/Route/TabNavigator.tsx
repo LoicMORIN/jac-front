@@ -3,8 +3,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 
 import HomeView from "../Views/HomeView";
-import FAQ from "../Views/FAQView";
-import Account from "../Views/AccountView";
+import FAQView from "../Views/FAQView";
+import AccountView from "../Views/AccountView";
 
 import Style from "../../Style";
 
@@ -19,8 +19,8 @@ function TabNavigator(props: any) {
           component={HomeView}
           options={{ headerShown: false }}
         />
-        <HomeTab.Screen name="Account" component={Account} />
-        <HomeTab.Screen name="FAQ" component={FAQ} />
+        <HomeTab.Screen name="Account" component={AccountView} />
+        <HomeTab.Screen name="FAQ" component={FAQView} />
       </HomeTab.Navigator>
     </NavigationContainer>
   );
