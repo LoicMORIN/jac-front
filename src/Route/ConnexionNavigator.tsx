@@ -11,43 +11,14 @@ import Style from "../../Style";
 
 const Stack = createNativeStackNavigator();
 
-function LoginScreen({navigation}:any) {
-    return ( 
-      <View>
-        <LoginView/>
-        <Button title="Sign Up" onPress={() => navigation.navigate('SignUp')} />
-        <Button title="Password" onPress={() => navigation.navigate('ForgetPassword')} />
-      </View>
-    );
-  }
-
-function SignUpScreen({navigation}:any) {
-    return ( 
-      <View>
-        <SingUpView/>
-        <Button title="Login" onPress={() => navigation.navigate('Login')} />
-        <Button title="Password" onPress={() => navigation.navigate('ForgetPassword')} />
-      </View>
-    );
-}
-
-function ForgetPasswordScreen({navigation}:any) {
-    return ( 
-      <View>
-        <ForgetPasswordView/>
-        <Button title="Sign Up" onPress={() => navigation.navigate('SignUp')} />
-        <Button title="Login" onPress={() => navigation.navigate('Login')} />
-      </View>
-    );
-  }
 
 function ConnexionNavigator(props: any) {
     return (
       <NavigationContainer>
         <Stack.Navigator>
-            <Stack.Screen name="Login" component={LoginScreen} />
-          <Stack.Screen name="SignUp" component={SignUpScreen} />
-          <Stack.Screen name="ForgetPassword" component={ForgetPasswordScreen} />
+            <Stack.Screen name="Login" component={LoginView} />
+          <Stack.Screen name="SignUp" component={SingUpView} />
+          <Stack.Screen name="ForgetPassword" component={ForgetPasswordView} />
         </Stack.Navigator>
       </NavigationContainer>
     );
