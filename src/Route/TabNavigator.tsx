@@ -6,7 +6,6 @@ import HomeView from "../Views/HomeView";
 import FAQView from "../Views/FAQView";
 import AccountView from "../Views/AccountView";
 
-import Style from "../../Style";
 
 const HomeTab = createBottomTabNavigator();
 
@@ -26,6 +25,6 @@ function TabNavigator(props: any) {
   );
 }
 
-const styles = Style;
+
 
 export default TabNavigator;

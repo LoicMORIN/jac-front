@@ -1,10 +1,9 @@
 import {Text, View, Button  } from 'react-native';
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import Style from '../../Style';
 
-function SingUpView({navigation}:any) {
+function SignUpView({navigation}:any) {
     return (
       <View style={Style.container}>
         <Text>Ecran d'inscription </Text>
@@ -15,6 +14,6 @@ function SingUpView({navigation}:any) {
   }
 
   
-  export default SingUpView;
+  export default SignUpView;
 
 
