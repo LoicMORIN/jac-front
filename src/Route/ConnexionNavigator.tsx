@@ -13,9 +13,9 @@ function ConnexionNavigator(props: any) {
     return (
       <NavigationContainer>
         <Stack.Navigator>
-            <Stack.Screen name="Login" component={LoginView} />
-          <Stack.Screen name="SignUp" component={SignUpView} />
-          <Stack.Screen name="ForgetPassword" component={ForgetPasswordView} />
+            <Stack.Screen name="Login" component={LoginView} options={{ headerShown: false }}/>
+          <Stack.Screen name="SignUp" component={SignUpView} options={{ headerShown: false }}/>
+          <Stack.Screen name="ForgetPassword" component={ForgetPasswordView} options={{ headerShown: false }}/>
         </Stack.Navigator>
       </NavigationContainer>
     );
