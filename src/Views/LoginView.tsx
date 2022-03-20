@@ -12,7 +12,7 @@ function LoginView({navigation}:any) {
         <Text>Ecran de connexion</Text>
         <Button title="Se connecter" onPress={() => login()} />
         <Text onPress={() => navigation.navigate('ForgetPassword')} style={Style.text_button}> Mot de passe oublié ? </Text>
-        <Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>
+        <Text> Pas encore inscrit ? </Text><Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>
       </View>
     );
   }
