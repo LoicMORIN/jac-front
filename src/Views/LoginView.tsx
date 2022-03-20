@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Button  } from 'react-native';
+import {Text, View, Button, } from 'react-native';
 import { useAuth } from "../Context/AuthContext";
 import Style from '../../Style';
 
@@ -11,8 +11,8 @@ function LoginView({navigation}:any) {
       <View style={Style.container}>
         <Text>Ecran de connexion</Text>
         <Button title="Se connecter" onPress={() => login()} />
-        <Button title="Sign Up" onPress={() => navigation.navigate('SignUp')} />
-        <Text onPress={() => navigation.navigate('ForgetPassword')}> Mot de passe oublié ? </Text>
+        <Text onPress={() => navigation.navigate('ForgetPassword')} style={Style.text_button}> Mot de passe oublié ? </Text>
+        <Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>
       </View>
     );
   }
