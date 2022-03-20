@@ -11,9 +11,11 @@ export default StyleSheet.create({
     },
     text_button: {
       color: '#1962D0',
-      frontStyle: '13',
+      fontSize: '13',
+      fontStyle: 'normal',
+      fontFamily: 'poppins',
       textAlignVertical: 'auto',
-      textDecorationLine: 'underline',
+      
 
     }
   });
