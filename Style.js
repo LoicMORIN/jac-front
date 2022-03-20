@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-backgroundColor_default = "#FBFBFB";
+backgroundColor_default = "#FBFBEB";
 
 export default StyleSheet.create({
     container: {
@@ -13,7 +13,6 @@ export default StyleSheet.create({
       color: '#1962D0',
       fontSize: '13',
       fontStyle: 'normal',
-      fontFamily: 'poppins',
       textAlignVertical: 'auto',
       
 
