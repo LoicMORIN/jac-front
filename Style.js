@@ -14,7 +14,8 @@ export default StyleSheet.create({
       fontSize: '13',
       fontStyle: 'normal',
       textAlignVertical: 'auto',
+    },
+    container_button:{
       
-
     }
   });
