@@ -12,7 +12,8 @@ const [password, setPassword] = useState('');
           alignSelf: "stretch",
           width: "auto",
           minWidth: 50,
-          margin: 50,
+          marginLeft: 20,
+          marginRight: 20,
         }}
         placeholder="Mot de Passe"
         onChangeText={newPassword => setPassword(newPassword)}

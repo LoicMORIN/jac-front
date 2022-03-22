@@ -12,7 +12,8 @@ const ViewEmail = () => {
           alignSelf: "stretch",
           width: "auto",
           minWidth: 50,
-          margin: 50,
+          marginLeft: 20,
+          marginRight: 20,
         }}
         placeholder="Email"
         onChangeText={newEmail => setEmail(newEmail)}
