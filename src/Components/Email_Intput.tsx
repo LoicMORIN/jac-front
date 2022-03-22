@@ -8,16 +8,11 @@ const ViewEmail = () => {
       <View style={Style.container_email}>
         <Image source={require('../../assets/@.png')} />
         <TextInput
-        style={{
-          alignSelf: "stretch",
-          width: "auto",
-          minWidth: 50,
-          marginLeft: 20,
-          marginRight: 20,
-        }}
-        placeholder="Email"
+        style={Style.input }
+        placeholder="Adresse mail"
         onChangeText={newEmail => setEmail(newEmail)}
         defaultValue={email}
+        placeholderTextColor="#DDDEE1"
         />
       </View>
     );

@@ -8,16 +8,11 @@ const [password, setPassword] = useState('');
       <View style={Style.container_password}>
         <Image source={require('../../assets/fermer-a-cle.png')} />
         <TextInput
-        style={{
-          alignSelf: "stretch",
-          width: "auto",
-          minWidth: 50,
-          marginLeft: 20,
-          marginRight: 20,
-        }}
+        style={Style.input }
         placeholder="Mot de Passe"
         onChangeText={newPassword => setPassword(newPassword)}
         defaultValue={password}
+        placeholderTextColor="#DDDEE1"
         />
         <Image source={require('../../assets/croise-les-yeux.png')} />
       </View>

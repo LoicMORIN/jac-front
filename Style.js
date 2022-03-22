@@ -11,7 +11,7 @@ export default StyleSheet.create({
     },
     text_button: {
       color: '#1962D0',
-      fontSize: '13',
+      fontSize: 13,
       fontStyle: 'normal',
       textAlignVertical: 'auto',
     },
@@ -20,13 +20,23 @@ export default StyleSheet.create({
     },
     container_email:{
       flexDirection: 'row',
+      marginBottom: 10,
+      marginTop: 10,
 
     },
     container_password:{
       flexDirection: 'row',
+      marginBottom: 10,
+      marginTop: 10,
     },
-    container_:{
-      
+    input:{
+      alignSelf: "stretch",
+      width: "auto",
+      minWidth: 50,
+      marginLeft: 20,
+      marginRight: 20,
+      borderBottomWidth : 1,
+      borderBottomColor : '#DDDEE1',      
     },
 
   });
