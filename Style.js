@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-backgroundColor_default = "#FBFBEB";
+backgroundColor_default = "#FBFBFB";
 
 export default StyleSheet.create({
     container: {
@@ -17,5 +17,16 @@ export default StyleSheet.create({
     },
     container_button:{
       
-    }
+    },
+    container_email:{
+      flexDirection: 'row',
+
+    },
+    container_password:{
+      flexDirection: 'row',
+    },
+    container_:{
+      
+    },
+
   });

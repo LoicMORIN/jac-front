@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Button} from 'react-native';
+import {Text, View, Button,Image} from 'react-native';
 import { useAuth } from "../Context/AuthContext";
 import Style from '../../Style';
 
@@ -12,7 +12,7 @@ function LoginView({navigation}:any) {
     const { login } = useAuth();
     return (
       <View style={Style.container}>
-        <ViewLogo/>
+        <Image source={require('../../assets/logo_UNICEF.png')} />
         <Text>Connexion à mon compte UNICEF</Text>
         <ViewEmail/>
         <ViewPassword/>
