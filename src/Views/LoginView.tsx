@@ -6,7 +6,7 @@ import Style from '../../Style';
 
 import ViewEmail from '../Components/Email_Intput';
 import ViewPassword from '../Components/Password_Intput';
-import S_inscrire from '../Components/S_inscrire';
+
 
 function LoginView({navigation}:any) {
     const { login } = useAuth();
@@ -16,9 +16,12 @@ function LoginView({navigation}:any) {
         <Text style={{fontSize:30}}>Connexion à mon compte UNICEF</Text>
         <ViewEmail/>
         <ViewPassword/>
-        <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button, {flexDirection:'row-reverse'}]}> Mot de passe oublié ? </Text>
+        <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button, {flexDirection:'row-reverse', marginBottom: 20, marginTop: 20 }]}> Mot de passe oublié ? </Text>
         <Button title="Se connecter" onPress={() => login()} />
-        <S_inscrire/>
+        <View style={{flexDirection: 'row',alignSelf: "center", marginBottom: 20, marginTop: 20,}}>
+          <Text> Pas encore inscrit ? </Text>
+          <Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>    
+        </View>
       </View>
     );
   }
