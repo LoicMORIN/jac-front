@@ -13,7 +13,7 @@ function LoginView({navigation}:any) {
     return (
       <View style={Style.container}>
         <Image source={require('../../assets/logo_UNICEF.png')} />
-        <Text style={{fontSize:30}}>Connexion à mon compte UNICEF</Text>
+        <Text style={{fontSize:20, fontWeight:'bold',marginHorizontal:10 }}>Connexion à mon compte UNICEF</Text>
         <ViewEmail/>
         <ViewPassword/>
         <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button, {flexDirection:'row-reverse', marginBottom: 20, marginTop: 20 }]}> Mot de passe oublié ? </Text>
