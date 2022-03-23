@@ -18,18 +18,19 @@ export default StyleSheet.create({
       
     },
     container_email:{
+      alignSelf: "stretch",
       flexDirection: 'row',
       marginBottom: 10,
       marginTop: 10,
 
     },
     container_password:{
+      alignSelf: "stretch",
       flexDirection: 'row',
       marginBottom: 10,
       marginTop: 10,
     },
     input:{
-      alignSelf: "stretch",
       width: "auto",
       minWidth: 50,
       marginLeft: 20,
