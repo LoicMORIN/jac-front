@@ -5,10 +5,10 @@ import Style from "../../Style";
 const ViewPassword = () => {
 const [password, setPassword] = useState('');
     return (
-      <View style={Style.container_password}>
+      <View style={Style.container_input}>
         <Image source={require('../../assets/fermer-a-cle.png')} />
         <TextInput
-        style={Style.input }
+        style={Style.input}
         placeholder="Mot de Passe"
         onChangeText={newPassword => setPassword(newPassword)}
         defaultValue={password}
