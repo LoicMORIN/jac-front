@@ -17,18 +17,10 @@ export default StyleSheet.create({
     container_button:{
       
     },
-    container_email:{
-      alignSelf: "stretch",
+    container_input:{
+      alignItems: "stretch",
       flexDirection: 'row',
-      marginBottom: 10,
-      marginTop: 10,
-
-    },
-    container_password:{
-      alignSelf: "stretch",
-      flexDirection: 'row',
-      marginBottom: 10,
-      marginTop: 10,
+      margin:20,
     },
     input:{
       width: "auto",
