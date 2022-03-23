@@ -12,7 +12,7 @@ export default StyleSheet.create({
     text_button: {
       color: '#1962D0',
       fontStyle: 'normal',
-      //textAlignVertical: 'auto',
+      textAlignVertical: 'auto',
     },
     container_button:{
       
