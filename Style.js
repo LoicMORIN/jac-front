@@ -38,5 +38,7 @@ export default StyleSheet.create({
       borderBottomWidth : 1,
       borderBottomColor : '#DDDEE1',      
     },
-
+    button:{
+    
+    }
   });

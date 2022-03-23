@@ -6,7 +6,7 @@ import Style from '../../Style';
 import ViewLogo from '../Components/ViewLogo';
 import ViewEmail from '../Components/Email_Intput';
 import ViewPassword from '../Components/Password_Intput';
-
+import S_inscrire from '../Components/S_inscrire';
 
 function LoginView({navigation}:any) {
     const { login } = useAuth();
@@ -18,7 +18,7 @@ function LoginView({navigation}:any) {
         <ViewPassword/>
         <Button title="Se connecter" onPress={() => login()} />
         <Text onPress={() => navigation.navigate('ForgetPassword')} style={Style.text_button}> Mot de passe oublié ? </Text>
-        <Text> Pas encore inscrit ? </Text><Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>
+        <S_inscrire/>
       </View>
     );
   }
