@@ -16,8 +16,8 @@ function LoginView({navigation}:any) {
         <Text style={{fontSize:30}}>Connexion à mon compte UNICEF</Text>
         <ViewEmail/>
         <ViewPassword/>
+        <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button, {flexDirection:'row-reverse'}]}> Mot de passe oublié ? </Text>
         <Button title="Se connecter" onPress={() => login()} />
-        <Text onPress={() => navigation.navigate('ForgetPassword')} style={Style.text_button}> Mot de passe oublié ? </Text>
         <S_inscrire/>
       </View>
     );
