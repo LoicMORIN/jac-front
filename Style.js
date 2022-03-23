@@ -24,9 +24,8 @@ export default StyleSheet.create({
     },
     input:{
       width: "auto",
-      minWidth: 50,
-      marginLeft: 20,
-      marginRight: 20,
+      minWidth: 100,
+      marginHorizontal: 20,
       borderBottomWidth : 1,
       borderBottomColor : '#DDDEE1',      
     },
