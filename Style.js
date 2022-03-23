@@ -11,7 +11,6 @@ export default StyleSheet.create({
     },
     text_button: {
       color: '#1962D0',
-      fontSize: 13,
       fontStyle: 'normal',
       textAlignVertical: 'auto',
     },
