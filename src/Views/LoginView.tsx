@@ -17,7 +17,7 @@ function LoginView({navigation}:any) {
         <ViewEmail/>
         <ViewPassword/>
         <View style={{flexDirection:'row-reverse'}}>
-          <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button, {marginBottom: 20, marginTop: 20 }]}> Mot de passe oublié ? </Text>
+          <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button]}> Mot de passe oublié ? </Text>
         </View>
         <Button title="Se connecter" onPress={() => login()} />
         <View style={{flexDirection: 'row',alignSelf: "center", marginBottom: 20, marginTop: 20,}}>

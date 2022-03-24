@@ -13,6 +13,8 @@ export default StyleSheet.create({
       color: '#1962D0',
       fontStyle: 'normal',
       textAlignVertical: 'auto',
+      marginBottom: 20, 
+      marginTop: 20 
     },
     container_button:{
       
@@ -23,8 +25,7 @@ export default StyleSheet.create({
       margin:20,
     },
     input:{
-      width: "auto",
-      minWidth: "auto",
+      minWidth: 200,
       marginHorizontal: 20,
       borderBottomWidth : 1,
       borderBottomColor : '#DDDEE1',      
