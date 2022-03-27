@@ -8,20 +8,17 @@ export default StyleSheet.create({
       backgroundColor: backgroundColor_default,
       alignItems: 'center',
       justifyContent: 'center',
-      fontFamily: "Poppins"
+      
     },
     text_button: {
       color: '#1962D0',
       fontStyle: 'normal',
-      textAlignVertical: 'auto',
-      marginBottom: 20, 
-      marginTop: 20 
+      textAlignVertical: 'auto', 
     },
     container_button:{
       
     },
     container_input:{
-      alignItems: "stretch",
       flexDirection: 'row',
       margin:20,
     },

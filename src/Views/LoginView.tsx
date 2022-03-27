@@ -13,16 +13,16 @@ function LoginView({navigation}:any) {
     return (
       <View style={Style.container}>
         <Image source={require('../../assets/logo_UNICEF.png')} />
-        <Text style={{fontSize:24, fontWeight:'bold',margin:14 }}>Connexion à mon compte UNICEF</Text>
+        <Text style={{fontSize:24,fontFamily:'Poppins', fontWeight:'bold',margin:20,marginRight:35 }}>Connexion à mon compte UNICEF</Text>
         <ViewEmail/>
         <ViewPassword/>
-        <View style={{flexDirection:'row-reverse'}}>
-          <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button]}> Mot de passe oublié ? </Text>
+        <View style={{marginVertical:20}}>
+          <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button,{fontFamily:'Poppins',}]}> Mot de passe oublié ? </Text>
         </View>
         <Button title="Se connecter" onPress={() => login()} />
-        <View style={{flexDirection: 'row',alignSelf: "center", marginBottom: 20, marginTop: 20,}}>
-          <Text> Pas encore inscrit ? </Text>
-          <Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>    
+        <View style={{flexDirection: 'row',alignSelf: "center", marginTop: 80,}}>
+          <Text style={{fontFamily:'Poppins',}}> Pas encore inscrit ? </Text>
+          <Text onPress={() => navigation.navigate('SignUp')} style={[Style.text_button,{fontFamily:'Poppins',}]}> S'inscrire </Text>    
         </View>
       </View>
     );
