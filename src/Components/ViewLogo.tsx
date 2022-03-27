@@ -11,12 +11,7 @@ const AlignSelfLayout = () => {
       values={["stretch", "flex-start", "flex-end", "center", "baseline"]}
       setSelectedValue={setAlignSelf}>
         <View
-          style={[styles.box, {
-            alignSelf,
-            width: "auto",
-            minWidth: 50,
-            backgroundColor: "powderblue",
-          }]}
+          style={[styles.box, {alignSelf,width: "auto", minWidth: 50, backgroundColor: "powderblue"}]}
         />
       <View
         style={[styles.box, { backgroundColor: "skyblue" }]}
