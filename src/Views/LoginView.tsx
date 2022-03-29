@@ -3,7 +3,7 @@ import {Text, View, Button,Image} from 'react-native';
 import { useAuth } from "../Context/AuthContext";
 import Style from '../../Style';
 
-
+import ButtonLogin from '../Components/Button_login';
 import ViewEmail from '../Components/Email_Intput';
 import ViewPassword from '../Components/Password_Intput';
 
@@ -19,7 +19,7 @@ function LoginView({navigation}:any) {
         <View style={{marginVertical:20}}>
           <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button,{fontFamily:'Poppins',}]}> Mot de passe oublié ? </Text>
         </View>
-        <Button title="Se connecter" onPress={() => login()} />
+        <ButtonLogin/>
         <View style={{flexDirection: 'row',alignSelf: "center", marginTop: 80,}}>
           <Text style={{fontFamily:'Poppins',}}> Pas encore inscrit ? </Text>
           <Text onPress={() => navigation.navigate('SignUp')} style={[Style.text_button,{fontFamily:'Poppins',}]}> S'inscrire </Text>    

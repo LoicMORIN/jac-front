@@ -3,7 +3,7 @@ import { useAuth } from "../Context/AuthContext";
 import {Text, TouchableOpacity } from "react-native";
 import Style from "../../Style";
 
-const ViewEmail = () => {
+const ButtonLogin = () => {
     const { login } = useAuth();
     return (
         <TouchableOpacity 
@@ -14,5 +14,5 @@ const ViewEmail = () => {
     );
   }
   
-  export default ViewEmail;
+  export default ButtonLogin;
 
