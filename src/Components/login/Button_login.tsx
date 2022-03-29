@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useAuth } from "../Context/AuthContext";
+import { useAuth } from "../../Context/AuthContext";
 import {Text, TouchableOpacity } from "react-native";
-import Style from "../../Style";
+import Style from "../../../Style";
 
 const ButtonLogin = () => {
     const { login } = useAuth();
