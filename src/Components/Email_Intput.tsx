@@ -13,6 +13,10 @@ const ViewEmail = () => {
         onChangeText={newEmail => setEmail(newEmail)}
         defaultValue={email}
         placeholderTextColor="#DDDEE1"
+        keyboardType='email-address'
+        autoCompleteType="email"
+        importantForAutofill="auto"
+        textContentType="emailAddress"
         />
       </View>
     );

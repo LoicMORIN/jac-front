@@ -25,6 +25,9 @@ const ViewPassword = () => {
         defaultValue={password}
         placeholderTextColor="#DDDEE1"
         secureTextEntry={yeux}
+        autoCompleteType="password"
+        importantForAutofill="auto"
+        textContentType="password"
         />
         <TouchableOpacity onPress={ () => setYeux(ReturnBool(yeux))}>
           <Image source={source_yeux} />
@@ -33,8 +36,8 @@ const ViewPassword = () => {
     );
 }
 
-function ReturnBool(a:Boolean){
-  if(a===true)
+function ReturnBool(test:Boolean){
+  if(test===true)
     return false
   else
     return true

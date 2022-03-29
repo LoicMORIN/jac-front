@@ -15,9 +15,6 @@ export default StyleSheet.create({
       fontStyle: 'normal',
       textAlignVertical: 'auto', 
     },
-    container_button:{
-      
-    },
     container_input:{
       flexDirection: 'row',
       margin:20,
@@ -26,7 +23,8 @@ export default StyleSheet.create({
       minWidth: 200,
       marginHorizontal: 20,
       borderBottomWidth : 1,
-      borderBottomColor : '#DDDEE1',      
+      borderBottomColor : '#DDDEE1',    
+      fontFamily : "Poppins",
     },
     button:{
     
