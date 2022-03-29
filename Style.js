@@ -26,7 +26,16 @@ export default StyleSheet.create({
       borderBottomColor : '#DDDEE1',    
       fontFamily : "Poppins",
     },
-    button:{
-    
+    button_View:{
+      borderRadius: 15,
+      backgroundColor:"#0065FF",
+      marginHorizontal:30,
+      marginVertical:10
+    },
+    button_Text:{
+      color:"FFFFFF",
+      fontFamily:"Poppins",
+      fontSize:20,
+      textAlign: "auto"
     }
   });
