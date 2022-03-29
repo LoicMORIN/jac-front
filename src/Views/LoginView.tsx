@@ -3,9 +3,9 @@ import {Text, View, Button,Image} from 'react-native';
 import { useAuth } from "../Context/AuthContext";
 import Style from '../../Style';
 
-import ButtonLogin from '../Components/Button_login';
+import ButtonLogin from '../Components/login/Button_login';
 import ViewEmail from '../Components/Email_Intput';
-import ViewPassword from '../Components/Password_Intput';
+import ViewPassword from '../Components/login/Password_Intput';
 
 
 function LoginView({navigation}:any) {
