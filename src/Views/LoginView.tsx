@@ -1,21 +1,34 @@
 import React from 'react';
-import {Text, View, Button  } from 'react-native';
+import {Text, View, Button,Image} from 'react-native';
 import { useAuth } from "../Context/AuthContext";
 import Style from '../../Style';
 
 
+import ViewEmail from '../Components/Email_Intput';
+import ViewPassword from '../Components/Password_Intput';
 
-function LoginView() {
+
+function LoginView({navigation}:any) {
     const { login } = useAuth();
     return (
       <View style={Style.container}>
-        <Text>Ecran de connexion</Text>
+        <Image source={require('../../assets/logo_UNICEF.png')} />
+        <Text style={{fontSize:24,fontFamily:'Poppins', fontWeight:'bold',margin:20,marginRight:35 }}>Connexion à mon compte UNICEF</Text>
+        <ViewEmail/>
+        <ViewPassword/>
+        <View style={{marginVertical:20}}>
+          <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button,{fontFamily:'Poppins',}]}> Mot de passe oublié ? </Text>
+        </View>
         <Button title="Se connecter" onPress={() => login()} />
+        <View style={{flexDirection: 'row',alignSelf: "center", marginTop: 80,}}>
+          <Text style={{fontFamily:'Poppins',}}> Pas encore inscrit ? </Text>
+          <Text onPress={() => navigation.navigate('SignUp')} style={[Style.text_button,{fontFamily:'Poppins',}]}> S'inscrire </Text>    
+        </View>
       </View>
     );
   }
 
   
-  export default LoginView;
+export default LoginView;
 
 

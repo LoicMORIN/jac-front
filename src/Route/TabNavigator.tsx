@@ -6,7 +6,6 @@ import HomeView from "../Views/HomeView";
 import FAQView from "../Views/FAQView";
 import AccountView from "../Views/AccountView";
 
-import Style from "../../Style";
 
 const HomeTab = createBottomTabNavigator();
 
@@ -14,18 +13,14 @@ function TabNavigator(props: any) {
   return (
     <NavigationContainer>
       <HomeTab.Navigator>
-        <HomeTab.Screen
-          name="Home"
-          component={HomeView}
-          options={{ headerShown: false }}
-        />
-        <HomeTab.Screen name="Account" component={AccountView} />
-        <HomeTab.Screen name="FAQ" component={FAQView} />
+        <HomeTab.Screen name="Home" component={HomeView}  options={{ headerShown: false }}/>
+        <HomeTab.Screen name="Account" component={AccountView} options={{ headerShown: false }}/>
+        <HomeTab.Screen name="FAQ" component={FAQView} options={{ headerShown: false }}/>
       </HomeTab.Navigator>
     </NavigationContainer>
   );
 }
 
-const styles = Style;
+
 
 export default TabNavigator;

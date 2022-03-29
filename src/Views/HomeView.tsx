@@ -4,7 +4,7 @@ import Style from "../../Style";
 
 function HomeView() {
     return(
-        <View> 
+        <View style={Style.container}> 
             <Text>HOME</Text>
         </View>
     )

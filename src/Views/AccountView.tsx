@@ -4,7 +4,7 @@ import Style from "../../Style";
 
 function AccountView() {
     return(
-        <View> 
+        <View style={Style.container}> 
             <Text>Accout</Text>
         </View>
     )
