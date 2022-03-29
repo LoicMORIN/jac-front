@@ -13,7 +13,8 @@ export default StyleSheet.create({
     text_button: {
       color: '#1962D0',
       fontStyle: 'normal',
-      textAlignVertical: 'auto', 
+      textAlignVertical: 'auto',
+      fontFamily:"Poppins", 
     },
     container_input:{
       flexDirection: 'row',
