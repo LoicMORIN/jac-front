@@ -31,17 +31,16 @@ export default StyleSheet.create({
       marginVertical:"1%",
       paddingHorizontal: 8,
       paddingVertical: 6,
-      borderRadius: 4,
+      borderRadius: 20,
       alignSelf: "flex-start",
       marginHorizontal: "5%",
-      minWidth: "48%",
+      minWidth: "90%",
       textAlign: "center",
     },
     button_Text:{
       color:"#FFFFFF",
       fontFamily:"Poppins",
-      fontSize:20,
+      fontSize:18,
       textAlign: "auto",
-      marginBottom: 10,
     }
   });

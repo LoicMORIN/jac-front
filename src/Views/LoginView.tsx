@@ -20,7 +20,7 @@ function LoginView({navigation}:any) {
           <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button,{fontFamily:'Poppins',}]}> Mot de passe oublié ? </Text>
         </View>
         <ButtonLogin/>
-        <View style={{flexDirection: 'row',alignSelf: "center", marginTop: 80,}}>
+        <View style={{flexDirection: 'row',alignSelf: "center", marginTop: 58,}}>
           <Text style={{fontFamily:'Poppins',}}> Pas encore inscrit ? </Text>
           <Text onPress={() => navigation.navigate('SignUp')} style={[Style.text_button,{fontFamily:'Poppins',}]}> S'inscrire </Text>    
         </View>
