@@ -12,7 +12,7 @@ const ViewPassword = () => {
   if(yeux == true)
     source_yeux = require('../../assets/croise-les-yeux.png');
   else
-    source_yeux = require('../../assets/@.png');
+    source_yeux = require('../../assets/ouvert-les-yeux.png');
   
   
     return (
