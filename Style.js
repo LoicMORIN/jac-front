@@ -27,15 +27,21 @@ export default StyleSheet.create({
       fontFamily : "Poppins",
     },
     button_View:{
-      borderRadius: 15,
       backgroundColor:"#0065FF",
-      marginHorizontal:30,
-      marginVertical:10
+      marginVertical:"1%",
+      paddingHorizontal: 8,
+      paddingVertical: 6,
+      borderRadius: 4,
+      alignSelf: "flex-start",
+      marginHorizontal: "5%",
+      minWidth: "48%",
+      textAlign: "center",
     },
     button_Text:{
-      color:"FFFFFF",
+      color:"#FFFFFF",
       fontFamily:"Poppins",
       fontSize:20,
-      textAlign: "auto"
+      textAlign: "auto",
+      marginBottom: 10,
     }
   });
