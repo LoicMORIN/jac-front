@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Button,Image} from 'react-native';
+import {Text, View,Image} from 'react-native';
 import { useAuth } from "../Context/AuthContext";
 import Style from '../../Style';
 
@@ -16,17 +16,17 @@ function LoginView({navigation}:any) {
         <Text style={{fontSize:24,fontFamily:'Poppins', fontWeight:'bold',margin:20,marginRight:35 }}>Connexion à mon compte UNICEF</Text>
         <ViewEmail/>
         <ViewPassword/>
-        <View style={{marginVertical:20}}>
-          <Text onPress={() => navigation.navigate('ForgetPassword')} style={[Style.text_button,{fontFamily:'Poppins',}]}> Mot de passe oublié ? </Text>
+        <View style={{margin:20, width:"85%", flexDirection:"row-reverse"}}>
+          <Text onPress={() => navigation.navigate('ForgetPassword')} style={Style.text_button}> Mot de passe oublié ? </Text>
         </View>
-        <ButtonLogin/>
-        <View style={{flexDirection: 'row',alignSelf: "center", marginTop: 58,}}>
-          <Text style={{fontFamily:'Poppins',}}> Pas encore inscrit ? </Text>
-          <Text onPress={() => navigation.navigate('SignUp')} style={[Style.text_button,{fontFamily:'Poppins',}]}> S'inscrire </Text>    
+        <ButtonLogin text="Test"/>
+        <View style={{flexDirection: 'row', alignSelf: "center", marginTop: 58}}>
+          <Text style={{fontFamily:'Poppins'}}> Pas encore inscrit ? </Text>
+          <Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>    
         </View>
       </View>
     );
-  }
+}
 
   
 export default LoginView;

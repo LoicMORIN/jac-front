@@ -8,7 +8,6 @@ export default StyleSheet.create({
       backgroundColor: backgroundColor_default,
       alignItems: 'center',
       justifyContent: 'center',
-      
     },
     text_button: {
       color: '#1962D0',
