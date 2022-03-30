@@ -42,6 +42,6 @@ export default StyleSheet.create({
       color:"#FFFFFF",
       fontFamily:"Poppins",
       fontSize:18,
-      textAlign: "auto",
+      textAlign: "center",
     }
   });

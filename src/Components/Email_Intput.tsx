@@ -17,6 +17,7 @@ const ViewEmail = () => {
         autoCompleteType="email"
         importantForAutofill="auto"
         textContentType="emailAddress"
+        autoCapitalize="none"
         />
       </View>
     );
