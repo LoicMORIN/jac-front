@@ -37,10 +37,21 @@ export default StyleSheet.create({
       minWidth: "90%",
       textAlign: "center",
     },
+    button_view_sign:{
+      backgroundColor:"#0065FF",
+      marginVertical:"1%",
+      paddingHorizontal: 8,
+      paddingVertical: 6,
+      borderRadius: 20,
+      alignSelf: "flex-start",
+      marginHorizontal: "5%",
+      minWidth: "60%",
+      textAlign: "center",
+    },
     button_Text:{
       color:"#FFFFFF",
       fontFamily:"Poppins",
       fontSize:18,
       textAlign: "center",
-    }
+    },
   });

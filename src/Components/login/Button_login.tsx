@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { useAuth } from "../../Context/AuthContext";
 import {Text, TouchableOpacity } from "react-native";
 import Style from "../../../Style";
 
-const ButtonLogin = (text) => {
+const ButtonLogin = () => {
     const { login } = useAuth();
     return (
         <TouchableOpacity 
         style={Style.button_View}
         onPress={() => login()} >
-            <Text style={Style.button_Text}> {text} </Text>
+            <Text style={Style.button_Text}> Se connecter </Text>
         </TouchableOpacity>
     );
   }
