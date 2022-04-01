@@ -32,7 +32,7 @@ export default StyleSheet.create({
       paddingHorizontal: 8,
       paddingVertical: 6,
       borderRadius: 20,
-      alignSelf: "flex-start",
+      alignSelf: "center",
       marginHorizontal: "5%",
       minWidth: "90%",
       textAlign: "center",
