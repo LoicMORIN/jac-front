@@ -37,13 +37,13 @@ export default StyleSheet.create({
       minWidth: "90%",
       textAlign: "center",
     },
-    button_view_sign:{
+    button_ForgetPassword:{
       backgroundColor:"#0065FF",
       marginVertical:"1%",
       paddingHorizontal: 8,
       paddingVertical: 6,
       borderRadius: 20,
-      alignSelf: "flex-start",
+      alignSelf: "center",
       marginHorizontal: "5%",
       minWidth: "60%",
       textAlign: "center",

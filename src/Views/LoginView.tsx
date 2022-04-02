@@ -16,11 +16,11 @@ function LoginView({navigation}:any) {
         <Text style={{fontSize:24,fontFamily:'Poppins', fontWeight:'bold',margin:20,marginRight:35 }}>Connexion à mon compte UNICEF</Text>
         <ViewEmail/>
         <ViewPassword/>
-        <View style={{margin:20, width:"85%", flexDirection:"row-reverse"}}>
+        <View style={{marginHorizontal:25, marginBottom:40, marginTop:10, width:"85%", flexDirection:"row-reverse"}}>
           <Text onPress={() => navigation.navigate('ForgetPassword')} style={Style.text_button}> Mot de passe oublié ? </Text>
         </View>
         <ButtonLogin/>
-        <View style={{flexDirection: 'row', alignSelf: "center", marginTop: 58}}>
+        <View style={{flexDirection: 'row', alignSelf: "center", marginTop: 150}}>
           <Text style={{fontFamily:'Poppins'}}> Pas encore inscrit ? </Text>
           <Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>    
         </View>
