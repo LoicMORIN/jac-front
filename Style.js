@@ -17,18 +17,18 @@ export default StyleSheet.create({
     },
     container_input:{
       flexDirection: 'row',
-      margin:20,
+      margin:"4%",
+      alignSelf:"flex-start",
     },
     input:{
-      minWidth: 200,
-      marginHorizontal: 20,
+      minWidth: "75%",
+      marginHorizontal:"4%",
       borderBottomWidth : 1,
       borderBottomColor : '#DDDEE1',    
       fontFamily : "Poppins",
     },
     button_View:{
       backgroundColor:"#0065FF",
-      marginVertical:"1%",
       paddingHorizontal: 8,
       paddingVertical: 6,
       borderRadius: 20,
@@ -39,7 +39,6 @@ export default StyleSheet.create({
     },
     button_ForgetPassword:{
       backgroundColor:"#0065FF",
-      marginVertical:"1%",
       paddingHorizontal: 8,
       paddingVertical: 6,
       borderRadius: 20,
