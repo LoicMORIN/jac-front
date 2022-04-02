@@ -7,7 +7,7 @@ const ButtonLogin = () => {
     const { login } = useAuth();
     return (
         <TouchableOpacity 
-        style={Style.button_View}
+        style={Style.button_Login}
         onPress={() => login()} >
             <Text style={Style.button_Text}> Se connecter </Text>
         </TouchableOpacity>

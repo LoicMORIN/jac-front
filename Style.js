@@ -27,7 +27,7 @@ export default StyleSheet.create({
       borderBottomColor : '#DDDEE1',    
       fontFamily : "Poppins",
     },
-    button_View:{
+    button_Login:{
       backgroundColor:"#0065FF",
       paddingHorizontal: 8,
       paddingVertical: 6,
