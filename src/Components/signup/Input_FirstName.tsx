@@ -3,15 +3,15 @@ import {View, TextInput, Text  } from "react-native";
 import Style from "../../../Style";
 
 const FirstName = () => {
-    const [email, setEmail] = useState('');
+    const [firstname, setFirstName] = useState('');
     return (
       <View style={Style.container_input_2}>
         <Text style={Style.text_input}>Prénom : </Text>
         <TextInput
         style={Style.input_2}
-        placeholder="Adresse mail"
-        onChangeText={newEmail => setEmail(newEmail)}
-        defaultValue={email}
+        placeholder="Prénom"
+        onChangeText={newFirstName => setFirstName(newFirstName)}
+        defaultValue={firstname}
         placeholderTextColor="#DDDEE1"
         autoCompleteType="name"
         importantForAutofill="auto"

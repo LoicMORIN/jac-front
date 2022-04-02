@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import Style from "../../Style";
 
-const ViewTab = () => {
+const Tab = () => {
     return (
       <View style={Style.container}>
 
@@ -10,4 +10,4 @@ const ViewTab = () => {
     );
   }
   
-  export default ViewTab;
+  export default Tab;

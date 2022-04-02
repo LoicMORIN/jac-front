@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Image, View, TextInput, TouchableOpacity } from "react-native";
 import Style from "../../../Style";
 
-const ViewPassword = () => {
+const Password = () => {
   const [password, setPassword] = useState('');
 
   const [yeux, setYeux] =  useState(true);
@@ -43,4 +43,4 @@ function ReturnBool(test:Boolean){
     return true
 }
 
-export default ViewPassword;
+export default Password;

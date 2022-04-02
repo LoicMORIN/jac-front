@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {Image, View, TextInput } from "react-native";
 import Style from "../../Style";
 
-const ViewEmail = () => {
+const Email = () => {
     const [email, setEmail] = useState('');
     return (
       <View style={Style.container_input}>
@@ -23,5 +23,5 @@ const ViewEmail = () => {
     );
   }
   
-  export default ViewEmail;
+  export default Email;
 
