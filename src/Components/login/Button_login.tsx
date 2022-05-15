@@ -1,14 +1,16 @@
 import React from "react";
-import { useAuth } from "../../Context/AuthContext";
 import {Text, TouchableOpacity } from "react-native";
 import Style from "../../../Style";
 
-const ButtonLogin = () => {
-    const { login } = useAuth();
+type Props = {
+    handlePress: () => void
+}
+
+const ButtonLogin: React.FC<Props> = ({handlePress}) => {
     return (
         <TouchableOpacity 
         style={Style.button_Login}
-        onPress={() => login()} >
+        onPress={() => handlePress()} >
             <Text style={Style.button_Text}> Se connecter </Text>
         </TouchableOpacity>
     );

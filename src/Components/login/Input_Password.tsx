@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import { Image, View, TextInput, TouchableOpacity } from "react-native";
 import Style from "../../../Style";
 
-const Password = () => {
-  const [password, setPassword] = useState('');
+type Props = {
+  password: string;
+  handleChange: (password: string) => void
+}
+
+const Password: React.FC<Props> = ({password,handleChange}) => {
 
   const [yeux, setYeux] =  useState(true);
 
@@ -21,8 +25,8 @@ const Password = () => {
         <TextInput
         style={Style.input}
         placeholder="Mot de Passe"
-        onChangeText={newPassword => setPassword(newPassword)}
-        defaultValue={password}
+        onChangeText={newPassword => handleChange(newPassword)}
+        value={password}
         placeholderTextColor="#DDDEE1"
         secureTextEntry={yeux}
         autoCompleteType="password"
